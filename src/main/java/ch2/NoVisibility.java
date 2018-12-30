@@ -1,8 +1,8 @@
 package ch2;
 
 public class NoVisibility {
-//    private static boolean ready;
-    private static volatile boolean ready;
+    private static boolean ready;
+    //private static volatile boolean ready;
     private static int number;
 
     private static class ReaderThread extends Thread{

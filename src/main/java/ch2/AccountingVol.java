@@ -4,8 +4,9 @@ public class AccountingVol implements Runnable {
     static AccountingVol instance = new AccountingVol();
     static volatile int i = 0;
 
-//    public static void increase() {
-//        i++;
+    public static void increase() {
+        i++;
+    }
 //    }
 //
 //
@@ -24,9 +25,9 @@ public class AccountingVol implements Runnable {
 //        }
 //    }
 
-    public synchronized static void increase() {
+    /*public synchronized static void increase() {
         i++;
-    }
+    }*/
 
     public void run() {
         for (int j = 0; j < 10000000; j++) {
