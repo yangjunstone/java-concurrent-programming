@@ -1,7 +1,5 @@
 package ch6.s7;
 
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
-
 import java.util.Random;
 import java.util.concurrent.atomic.LongAccumulator;
 

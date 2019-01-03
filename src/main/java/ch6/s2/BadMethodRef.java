@@ -9,6 +9,6 @@ public class BadMethodRef {
         for(int i=1;i<10;i++){
             numbers.add(Double.valueOf(i));
         }
-//        numbers.stream().map(Double::toString).forEach(System.out::println);
+        //numbers.stream().map(Double::toString).forEach(System.out::println);
     }
 }

@@ -18,6 +18,7 @@ public class HelloWorld extends UntypedActor {
     public void onReceive(Object msg) throws Exception {
         if(msg == Greeter.Msg.DONE){
             greeter.tell(Greeter.Msg.GREET, getSelf());
+            //Thread.sleep(1000);
             getContext().stop(getSelf());
         }else{
             unhandled(msg);

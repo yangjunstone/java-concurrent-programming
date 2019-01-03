@@ -9,9 +9,11 @@ public class Example3 {
             if(arr[i]%2!=0){
                 arr[i]++;
             }
-            System.out.println(arr[i]);
+            System.out.print(arr[i]);
         }
 
-        Arrays.stream(arr).map(x->(x%2==0?x:x+1)).forEach(System.out::println);
+        System.out.println();
+
+        Arrays.stream(arr).map(x->(x%2==0?x:x+1)).forEach(System.out::print);
     }
 }

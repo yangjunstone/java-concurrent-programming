@@ -17,10 +17,15 @@ public class PrimeUtil {
     }
 
     public static void main(String[]args){
+        long b,e;
+        b = System.currentTimeMillis();
         long sum = IntStream.range(1, 1000000).filter(PrimeUtil::isPrime).count();
-        System.out.println(sum);
+        e = System.currentTimeMillis();
+        System.out.println(sum+", time spend="+(e-b));
 
+        b = System.currentTimeMillis();
         sum = IntStream.range(1, 1000000).parallel().filter(PrimeUtil::isPrime).count();
-        System.out.println(sum);
+        e = System.currentTimeMillis();
+        System.out.println(sum+", time spend="+(e-b));
     }
 }
